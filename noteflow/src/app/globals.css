@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+/* NoteFlow color scheme */
+:root {
+  --background: #ffffff;
+  --foreground: #1F2937;
+  --sidebar-bg: #F7F7F7;
+  --accent: #4F46E5;
+  --accent-light: #EEF2FF;
+  --text-secondary: #6B7280;
+  --border: #E5E7EB;
+  --hover: #EEF2FF;
+  --danger: #EF4444;
+  --tag-bg: #E0E7FF;
+}
+
+.dark {
+  --background: #1A1A2E;
+  --foreground: #E5E7EB;
+  --sidebar-bg: #16213E;
+  --accent: #818CF8;
+  --accent-light: #312E81;
+  --text-secondary: #9CA3AF;
+  --border: #374151;
+  --hover: #1E3A5F;
+  --danger: #F87171;
+  --tag-bg: #312E81;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TipTap editor styles */
+.tiptap {
+  outline: none;
+  min-height: 200px;
+}
+
+.tiptap p {
+  margin: 0.25em 0;
+}
+
+.tiptap h1 {
+  font-size: 1.75em;
+  font-weight: 700;
+  margin: 0.5em 0 0.25em;
+}
+
+.tiptap h2 {
+  font-size: 1.375em;
+  font-weight: 600;
+  margin: 0.5em 0 0.25em;
+}
+
+.tiptap h3 {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin: 0.5em 0 0.25em;
+}
+
+.tiptap ul,
+.tiptap ol {
+  padding-left: 1.5em;
+  margin: 0.25em 0;
+}
+
+.tiptap ul {
+  list-style-type: disc;
+}
+
+.tiptap ol {
+  list-style-type: decimal;
+}
+
+.tiptap li {
+  margin: 0.1em 0;
+}
+
+.tiptap ul[data-type="taskList"] {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tiptap ul[data-type="taskList"] li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.tiptap ul[data-type="taskList"] li label {
+  flex-shrink: 0;
+  margin-top: 0.15em;
+}
+
+.tiptap ul[data-type="taskList"] li label input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: var(--accent);
+}
+
+.tiptap ul[data-type="taskList"] li div {
+  flex: 1;
+}
+
+.tiptap blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1em;
+  margin: 0.5em 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.tiptap pre {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 0.5em;
+  padding: 0.75em 1em;
+  margin: 0.5em 0;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+.tiptap code {
+  background: rgba(79, 70, 229, 0.1);
+  border-radius: 0.25em;
+  padding: 0.1em 0.3em;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+.tiptap pre code {
+  background: none;
+  padding: 0;
+}
+
+.tiptap hr {
+  border: none;
+  border-top: 2px solid var(--border);
+  margin: 1em 0;
+}
+
+.tiptap strong {
+  font-weight: 700;
+}
+
+.tiptap em {
+  font-style: italic;
+}
+
+.tiptap s {
+  text-decoration: line-through;
+}
+
+.tiptap p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: var(--text-secondary);
+  pointer-events: none;
+  height: 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Transitions for theme switching */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.15s ease;
+}
