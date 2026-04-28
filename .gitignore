@@ -1,0 +1,4 @@
+# Screenshots and playwright artifacts
+*.png
+*.jpeg
+.playwright-mcp/
