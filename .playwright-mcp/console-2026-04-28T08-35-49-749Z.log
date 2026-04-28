@@ -1,0 +1,29 @@
+[    2270ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[    2315ms] [LOG] [HMR] connected @ http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[    2412ms] Error: Tiptap Error: SSR has been detected, please set `immediatelyRender` explicitly to `false` to avoid hydration mismatches.
+    at _EditorInstanceManager.getInitialEditor (http://localhost:3456/pierre/_next/static/chunks/node_modules__pnpm_0stiry6._.js:10469:27)
+    at new _EditorInstanceManager (http://localhost:3456/pierre/_next/static/chunks/node_modules__pnpm_0stiry6._.js:10450:29)
+    at useEditor.useState2 (http://localhost:3456/pierre/_next/static/chunks/node_modules__pnpm_0stiry6._.js:10664:36)
+    at mountStateImpl (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_react-dom_0r6u5qa._.js:5017:28)
+    at mountState (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_react-dom_0r6u5qa._.js:5038:24)
+    at Object.useState (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_react-dom_0r6u5qa._.js:15240:24)
+    at exports.useState (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_0kz62jm._.js:1754:36)
+    at useEditor (http://localhost:3456/pierre/_next/static/chunks/node_modules__pnpm_0stiry6._.js:10663:366)
+    at Editor (http://localhost:3456/pierre/_next/static/chunks/src_0sgkz~y._.js:1622:418)
+    at Object.react_stack_bottom_frame (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_react-dom_0r6u5qa._.js:15037:24)
+    at renderWithHooks (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_react-dom_0r6u5qa._.js:4620:24)
+    at updateFunctionComponent (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_react-dom_0r6u5qa._.js:6081:21)
+    at beginWork (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_react-dom_0r6u5qa._.js:6691:24)
+    at runWithFiberInDEV (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_react-dom_0r6u5qa._.js:965:74)
+    at performUnitOfWork (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_react-dom_0r6u5qa._.js:9555:97)
+    at workLoopSync (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_react-dom_0r6u5qa._.js:9449:40)
+    at renderRootSync (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_react-dom_0r6u5qa._.js:9433:13)
+    at performWorkOnRoot (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_react-dom_0r6u5qa._.js:9098:47)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_react-dom_0r6u5qa._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_compiled_0kz62jm._.js:2647:64)
+[   16505ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[   16506ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[   16530ms] [LOG] [Fast Refresh] done in 55ms @ http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[   16604ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[   16619ms] [LOG] [HMR] connected @ http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[   16652ms] [WARNING] [tiptap warn]: Duplicate extension names found: ['underline']. This can lead to issues. @ http://localhost:3456/pierre/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
